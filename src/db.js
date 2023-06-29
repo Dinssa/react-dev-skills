@@ -1,4 +1,4 @@
-const skills = [
+export const skills = [
     'HTML',
     'CSS',
     'JavaScript',
@@ -17,7 +17,3 @@ const skills = [
     'C#',
     'ASP.NET'
 ];
-
-module.exports = {
-    skills
-}

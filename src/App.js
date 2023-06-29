@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import SkillList from './jsx/SkillList';
 import NewSkillForm from './jsx/NewSkillForm';
-import skills from './db';
+import {skills} from './db';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <h5>React Dev Skills</h5>
       </header>
       <main>
-        <SkillList />
+        <SkillList skills={skills} />
         <NewSkillForm />
       </main>
     </div>
