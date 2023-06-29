@@ -1,9 +1,26 @@
 .SkillListItem {
     list-style: none;
-    margin: 2vmin auto;
-    padding: 1vmin;
+    margin: 1vmin auto;
+    padding: 0.5vmin;
     border: 0.5vmin solid rgb(40, 44, 52);
+    border-radius: 0.5rem;
     font-size: 2vmin;
     max-width: 30vmin;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SkillListItem-level{
+    font-size: 1.2vmin;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: #61DAFB;
+    text-transform: uppercase;
+    border-radius: 1.5rem;
+    width: 7vmin;
+    height: 3vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

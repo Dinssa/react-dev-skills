@@ -6,10 +6,8 @@ export default function SkillListItem({ skill, id, index }) {
     <li 
       className="SkillListItem"
       key={id}
-      style={{
-        backgroundColor: index % 2 ? "lightblue" : "#61DAFB"
-      }}
     >
-        {skill}
+        {skill.name}
+        <span className="SkillListItem-level">Level: {skill.level}</span>
     </li>);
 }
