@@ -2,9 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import SkillList from './components/SkillList';
 import NewSkillForm from './components/NewSkillForm';
-import {skills} from './db';
+import {skills as skillsDB} from './db';
+import { useState } from 'react';
 
 function App() {
+  const [skills, setSkills] = useState(skillsDB);
   return (
     <div className="App">
       <header className="App-header">
