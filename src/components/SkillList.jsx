@@ -1,4 +1,5 @@
 import React from "react";
+import "./SkillList.css";
 
 import SkillListItem from "./SkillListItem";
 
