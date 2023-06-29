@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import SkillList from './jsx/SkillList';
 import NewSkillForm from './jsx/NewSkillForm';
+import skills from './db';
 
 function App() {
   return (
