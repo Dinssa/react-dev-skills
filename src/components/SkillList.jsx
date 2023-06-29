@@ -6,7 +6,7 @@ import SkillListItem from "./SkillListItem";
 export default function SkillList({ skills }) {
     return (
         <ul>
-        {skills.map((s, index) => <SkillListItem key={index} skill={s} />)}
+        {skills.map((s, index) => <SkillListItem key={index} skill={s} index={index} />)}
         </ul>
     );
 }
