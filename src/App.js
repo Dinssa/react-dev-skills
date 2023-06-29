@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import SkillList from './jsx/SkillList';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <h5>React Dev Skills</h5>
       </header>
       <main>
-      
+        <SkillList />
       </main>
     </div>
   );
