@@ -1,5 +1,5 @@
 import React from "react";
-import "./SkillListItem.css"
+import "../stylesheets/SkillListItem.css"
 
 export default function SkillListItem({ skill, id, index }) {
   return (

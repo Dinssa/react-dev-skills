@@ -1,5 +1,5 @@
 import React from "react";
-import "./NewSkillForm.css";
+import "../stylesheets/NewSkillForm.css";
 
 export default function NewSkillForm() {
   return (
