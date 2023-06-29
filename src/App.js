@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import SkillList from './jsx/SkillList';
+import NewSkillForm from './jsx/NewSkillForm';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </header>
       <main>
         <SkillList />
+        <NewSkillForm />
       </main>
     </div>
   );
