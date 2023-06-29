@@ -5,7 +5,7 @@
     border: 0.5vmin solid rgb(40, 44, 52);
     border-radius: 0.5rem;
     font-size: 2vmin;
-    max-width: 30vmin;
+    max-width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
