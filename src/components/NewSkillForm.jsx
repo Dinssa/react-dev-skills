@@ -3,7 +3,7 @@ import "../stylesheets/NewSkillForm.css";
 import { useState } from 'react';
 
 export default function NewSkillForm({skills, setSkills}) {
-  let defaults = { name: '', level: 1 };
+  const defaults = { name: '', level: 1 };
   const [newSkill, setNewSkill] = useState(defaults);
   return (
     <form className="NewSkillForm">
@@ -44,8 +44,8 @@ export default function NewSkillForm({skills, setSkills}) {
             (e) => {
                 e.preventDefault();
                 const name = newSkill.name.trim() === '' ? 'Undefined' : newSkill.name;
-                const level = parseInt(newSkill.level);
-                let skillParsed = { name, level };
+                const level = newSkill.level;
+                const skillParsed = { name, level };
                 setSkills([...skills, skillParsed]);
                 setNewSkill(defaults);
             }
