@@ -1,26 +1,36 @@
 import React from "react";
 import "../stylesheets/NewSkillForm.css";
+import { useState } from 'react';
 
 export default function NewSkillForm({skills, setSkills}) {
-  let newSkill = {};
+  let defaults = { name: '', level: 1 };
+  const [newSkill, setNewSkill] = useState(defaults);
   return (
     <form className="NewSkillForm">
       <div className="form-content">
         <div className="form-group">
           <label>Skill</label>
           <input 
+          id="skillName"
           value={newSkill.name}
           onChange={(e) => {
-              newSkill.name = e.target.value;
+            setNewSkill({
+              ...newSkill,
+              name: e.target.value
+            });
           }}
           ></input>
         </div>
         <div className="form-group">
           <label>Level</label>
-          <select 
+          <select
+            id="skillLevel" 
             value={newSkill.level}
             onChange={(e) => {
-                newSkill.level = e.target.value;
+              setNewSkill({
+                ...newSkill,
+                level: e.target.value
+              });
             }}
           >
             <option value={1}>1</option>
@@ -33,7 +43,11 @@ export default function NewSkillForm({skills, setSkills}) {
         <button onClick={
             (e) => {
                 e.preventDefault();
-                setSkills([...skills, newSkill]);
+                const name = newSkill.name.trim() === '' ? 'Undefined' : newSkill.name;
+                const level = parseInt(newSkill.level);
+                let skillParsed = { name, level };
+                setSkills([...skills, skillParsed]);
+                setNewSkill(defaults);
             }
         }>ADD SKILL</button>
       </div>
