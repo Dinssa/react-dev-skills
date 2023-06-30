@@ -14,8 +14,8 @@ function App() {
         <h5>React Dev Skills</h5>
       </header>
       <main>
-        <SkillList skills={skills} />
-        <NewSkillForm />
+        <SkillList skills={skills} setSkills={setSkills}/>
+        <NewSkillForm skills={skills} setSkills={setSkills}/>
       </main>
     </div>
   );

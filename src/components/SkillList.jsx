@@ -3,10 +3,12 @@ import "../stylesheets/SkillList.css";
 
 import SkillListItem from "./SkillListItem";
 
-export default function SkillList({ skills }) {
+export default function SkillList({ skills, setSkills }) {
     return (
-        <ul>
-        {skills.map((s, index) => <SkillListItem key={index} skill={s} index={index} />)}
-        </ul>
+        <div>
+            <ul>
+            {skills.map((s, index) => <SkillListItem key={index} skill={s} index={index} />)}
+            </ul>
+        </div>
     );
 }
